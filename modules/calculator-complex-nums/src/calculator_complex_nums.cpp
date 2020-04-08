@@ -2,9 +2,9 @@
 
 CalculatorComplexNums::CalculatorComplexNums() : pattern("") {}
 
-CalculatorComplexNums::CalculatorComplexNums(std::string _pattern) {
-	pattern = _pattern;
-}
+CalculatorComplexNums::CalculatorComplexNums(std::string _pattern) :
+    pattern(_pattern) {}
+
 
 std::string CalculatorComplexNums::GetPattern() {
 	return pattern;
