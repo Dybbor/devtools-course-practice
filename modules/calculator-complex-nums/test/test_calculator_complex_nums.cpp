@@ -17,7 +17,7 @@ TEST(CalculatorComplexNums, can_create_empty_pattern) {
 TEST(CalculatorComplexNums, can_create_pattern) {
     // Act
     CalculatorComplexNums c("some");
-    
+
     // Assert
     EXPECT_EQ("some", c.GetPattern());
 }

@@ -1,5 +1,8 @@
 #include <include/calculator_complex_nums.h>
 
+CalculatorComplexNums::CalculatorComplexNums() {
+    pattern = "";
+}
 CalculatorComplexNums::CalculatorComplexNums(std::string _pattern) {
 	pattern = _pattern;
 }

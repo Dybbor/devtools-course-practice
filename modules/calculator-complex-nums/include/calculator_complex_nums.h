@@ -9,6 +9,7 @@ class CalculatorComplexNums {
  private:
     std::string pattern;
  public:
+    CalculatorComplexNums();
     CalculatorComplexNums(std::string _pattern = "");
     std::string GetPattern();
 };
