@@ -21,3 +21,8 @@ TEST(CalculatorComplexNums, can_create_pattern) {
     // Assert
     EXPECT_EQ("some", c.GetPattern());
 }
+
+TEST(CalculatorComplexNums, check_help) {
+    CalculatorComplexNums c;
+    c.Help();
+}
