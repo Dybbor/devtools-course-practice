@@ -10,7 +10,7 @@ class CalculatorComplexNums {
     std::string pattern;
  public:
     CalculatorComplexNums();
-    CalculatorComplexNums(std::string _pattern = "");
+    CalculatorComplexNums(std::string _pattern);
     std::string GetPattern();
 };
 
