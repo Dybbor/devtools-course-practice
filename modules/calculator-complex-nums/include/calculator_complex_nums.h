@@ -5,16 +5,21 @@
 
 #include <string>
 
+#include "include/complex_number.h"
+
 class CalculatorComplexNums {
  private:
     std::string pattern;
+    ComplexNumber c1;
+    ComplexNumber c2;
  public:
     CalculatorComplexNums();
     explicit CalculatorComplexNums(const std::string _pattern);
 
     void Help();
     std::string GetPattern();
-    bool CheckPattern();
+    void SetPattern(std::string _pattern);
+    bool CheckBrackets();
 };
 
 #endif  // MODULES_CALCULATOR_COMPLEX_NUMS_INCLUDE_CALCULATOR_COMPLEX_NUMS_H_
