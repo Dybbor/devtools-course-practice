@@ -7,17 +7,17 @@
 #include "include/calculator_complex_nums.h"
 
 TEST(CalculatorComplexNums, can_create_empty_pattern) {
-	// Act
-	CalculatorComplexNums c;
+    // Act
+    CalculatorComplexNums c;
 
-	//Assert
-	EXPECT_EQ("", c.GetPattern());
+    // Assert
+    EXPECT_EQ("", c.GetPattern());
 }
 
 TEST(CalculatorComplexNums, can_create_pattern) {
-	// Act
-	CalculatorComplexNums c("some");
-
-	//Assert
-	EXPECT_EQ("some", c.GetPattern());
+    // Act
+    CalculatorComplexNums c("some");
+    
+    // Assert
+    EXPECT_EQ("some", c.GetPattern());
 }
