@@ -24,8 +24,8 @@ void CalculatorComplexNums::Help() {
 
         "Where all arguments are double-precision numbers,\n" +
         "and <operation> is one of '+', '-', '*', '/'.\n" +
-		"If something not exist, write 0\n\n" +
-		"Example:\n\n" + "(4.2+5i)+(5.2-3i)\n\n" + 
+        "If something not exist, write 0\n\n" +
+        "Example:\n\n" + "(4.2+5i)+(5.2-3i)\n\n" +
         "(0-5i)*(3+3.2i)\n";
     std::cout << help << std::endl;
 }
@@ -40,8 +40,7 @@ bool CalculatorComplexNums::CheckBrackets() {
     for (auto i : pattern) {
         if (i == '(') {
             count++;
-        }
-        else if (i == ')'){
+        } else if (i == ')') {
             count--;
         }
     }
@@ -49,9 +48,8 @@ bool CalculatorComplexNums::CheckBrackets() {
         int pos = 0;
         if (pattern[pos] != '(') {
             check = false;
-        }
-        else {
-            pos = (int)pattern.find('i');
+        } else {
+            pos = static_cast <int> (pattern.find('i'));
             if (pattern[pos + 1] != ')') {
                 check = false;
             }
