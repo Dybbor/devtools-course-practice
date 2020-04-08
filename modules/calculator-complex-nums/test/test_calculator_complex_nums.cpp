@@ -29,7 +29,7 @@ TEST(CalculatorComplexNums, can_create_pattern) {
 TEST(CalculatorComplexNums, check_brackets_return_true) {
     // Arrange
     std::string str = "(5+2i)+(2-0i)";
-     
+    
     // Act
     CalculatorComplexNums c(str);
 

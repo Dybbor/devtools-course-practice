@@ -52,17 +52,14 @@ bool CalculatorComplexNums::CheckBrackets() {
             pos = static_cast <int> (pattern.find('i'));
             if (pattern[pos + 1] != ')') {
                 check = false;
-            }
-            else if (pattern[pos + 3] != '(') {
+            } else if (pattern[pos + 3] != '(') {
                 check = false;
-            }
-            else if (pattern[pattern.size() - 1] != ')') {
+            } else if (pattern[pattern.size() - 1] != ')') {
                 check = false;
             }
         }
         return check;
-    }
-    else {
+    } else {
         return false;
     }
 }
