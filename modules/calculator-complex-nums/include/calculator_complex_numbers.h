@@ -1,0 +1,12 @@
+// Copyright 2020 Dobrohotov Vitaly
+
+#ifndef MODULES_CALCULATOR_COMPLEX_NUMS_INCLUDE_CALCULATOR_COMPLEX_NUMBERS_H_
+#define MODULES_CALCULATOR_COMPLEX_NUMS_INCLUDE_CALCULATOR_COMPLEX_NUMBERS_H_
+class CalculatorComplexNumbers {
+ private:
+    int a;
+ public:
+    CalculatorComplexNumbers();
+};
+
+#endif //MODULES_CALCULATOR_COMPLEX_NUMS_INCLUDE_CALCULATOR_COMPLEX_NUMBERS_H_
