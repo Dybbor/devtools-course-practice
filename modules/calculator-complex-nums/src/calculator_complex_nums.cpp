@@ -77,9 +77,6 @@ bool CalculatorComplexNums::CheckSymbols() {
 }
 
 void CalculatorComplexNums::InitializeFromPattern() {
-    if (!CheckBrackets() && !CheckSymbols()) {
-        this -> Help();
-    }
     char *k, *m, *n;
     c1.setRe(std::strtod(&pattern[1], &k));
     c1.setIm(std::strtod(k, NULL));
