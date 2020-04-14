@@ -44,14 +44,18 @@ bool CalculatorComplexNums::CheckBrackets() {
             pos = static_cast <int> (pattern.find('i'));
             if (pattern[pos + 1] != ')') {
                 check = false;
-            } else if (pattern[pos + 2] != '+' && pattern[pos + 2] != '-'
+            } 
+            if (pattern[pos + 2] != '+' && pattern[pos + 2] != '-'
                 && pattern[pos + 2] != '/' && pattern[pos + 2] != '*') {
                 check = false;
-            } else if (pattern[pos + 3] != '(') {
+            } 
+            if (pattern[pos + 3] != '(') {
                 check = false;
-            } else if (pattern[pattern.size() - 2] != 'i') {
+            } 
+            if (pattern[pattern.size() - 2] != 'i') {
                 check = false;
-            } else if (pattern[pattern.size() - 1] != ')') {
+            } 
+            if (pattern[pattern.size() - 1] != ')') {
                 check = false;
             }
         }
