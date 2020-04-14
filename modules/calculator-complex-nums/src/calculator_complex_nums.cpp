@@ -36,22 +36,21 @@ bool CalculatorComplexNums::CheckBrackets() {
         }
     }
     if (count == 0) {
-        bool check = true;
         if (pattern[0] != '(') {
-            check = false;
+            return false;
         } else {
             int pos = static_cast <int> (pattern.find('i'));
             if (pattern[pos + 1] != ')' && pattern[pos + 3] != '(' &&
                 pattern[pattern.size() - 2] != 'i' &&
                 pattern[pattern.size() - 1] != ')') {
-                check = false;
+                return false;
             }
             if (pattern[pos + 2] != '+' && pattern[pos + 2] != '-'
                 && pattern[pos + 2] != '/' && pattern[pos + 2] != '*') {
-                check = false;
+                return false;
             }
         }
-        return check;
+        return true;
     } else {
         return false;
     }
