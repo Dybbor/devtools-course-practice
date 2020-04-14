@@ -17,7 +17,6 @@ class CalculatorComplexNums {
     CalculatorComplexNums();
     explicit CalculatorComplexNums(const std::string _pattern);
 
-    void Help();
     std::string GetPattern();
     ComplexNumber GetFirst();
     ComplexNumber GetSecond();
