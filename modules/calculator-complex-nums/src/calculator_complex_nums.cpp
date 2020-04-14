@@ -30,10 +30,6 @@ void CalculatorComplexNums::Help() {
     std::cout << help << std::endl;
 }
 
-void CalculatorComplexNums::SetPattern(std::string _pattern) {
-    pattern = _pattern;
-}
-
 ComplexNumber CalculatorComplexNums::GetFirst() {
     return c1;
 }
@@ -47,7 +43,6 @@ char CalculatorComplexNums::GetOperation() {
 }
 
 bool CalculatorComplexNums::CheckBrackets() {
-    bool check = true;
     int count = 0;
     for (auto i : pattern) {
         if (i == '(') {
@@ -57,6 +52,7 @@ bool CalculatorComplexNums::CheckBrackets() {
         }
     }
     if (count == 0) {
+        bool check = true;
         int pos = 0;
         if (pattern[pos] != '(') {
             check = false;

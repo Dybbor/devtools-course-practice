@@ -19,7 +19,6 @@ class CalculatorComplexNums {
 
     void Help();
     std::string GetPattern();
-    void SetPattern(std::string _pattern);
     ComplexNumber GetFirst();
     ComplexNumber GetSecond();
     char GetOperation();
