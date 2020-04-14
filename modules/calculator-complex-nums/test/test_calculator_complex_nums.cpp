@@ -232,7 +232,7 @@ TEST(CalculatorComplexNums, throw_if_try_calculate_without_initialize) {
     EXPECT_ANY_THROW(c.Calculate());
 }
 
-TEST(CalculatorComplexNums, throw_if_division_by_zero) {
+TEST(CalculatorComplexNums, throw_division_by_zero) {
     // Act
     CalculatorComplexNums c("(1.3+5i)/(0-0)");
     c.InitializeFromPattern();
