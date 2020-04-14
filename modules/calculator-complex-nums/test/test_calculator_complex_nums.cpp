@@ -150,7 +150,7 @@ TEST(CalculatorComplexNums, initialize_from_pattern_with_positive_data) {
     EXPECT_EQ(c.GetSecond().getRe(), 5.2);
     EXPECT_EQ(c.GetSecond().getIm(), 0);
     EXPECT_EQ(c.GetOperation(), '-');
- }
+}
 
 TEST(CalculatorComplexNums, initialize_from_pattern_with_negative_data) {
     // Arrange
