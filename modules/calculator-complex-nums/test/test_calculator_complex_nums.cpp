@@ -210,7 +210,7 @@ TEST(CalculatorComplexNums, calculate_with_multiplication) {
     EXPECT_EQ(res.getIm(), -2.05);
 }
 
-TEST(CalculatorComplexNums, calculate_with_diviâion) {
+TEST(CalculatorComplexNums, calculate_with_division) {
     // Arrange
     CalculatorComplexNums c("(1.3+5i)/(0.5-3.5i)");
     ComplexNumber res;
