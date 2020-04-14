@@ -41,8 +41,10 @@ bool CalculatorComplexNums::CheckBrackets() {
         }
         int pos = static_cast <int> (pattern.find('i'));
         if (pattern[pos + 1] != ')' && pattern[pos + 3] != '(' &&
-            pattern[pattern.size() - 2] != 'i' &&
-            pattern[pattern.size() - 1] != ')') {
+            pattern[pattern.size() - 2] != 'i') {
+            return false;
+        }
+        if (pattern[pattern.size() - 1] != ')') {
             return false;
         }
         if (pattern[pos + 2] != '+' && pattern[pos + 2] != '-'

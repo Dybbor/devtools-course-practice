@@ -72,7 +72,18 @@ TEST(CalculatorComplexNums, check_brackets_return_false_3) {
 
 TEST(CalculatorComplexNums, check_brackets_return_false_4) {
     // Arrange
-    std::string str = "5+2i)=(2-0i)";
+    std::string str = "5+2i()=(2-0i)";
+
+    // Act
+    CalculatorComplexNums c(str);
+
+    // Assert
+    EXPECT_FALSE(c.CheckBrackets());
+}
+
+TEST(CalculatorComplexNums, check_brackets_return_false_5) {
+    // Arrange
+    std::string str = "(5+0i)/(2+5)i8";
 
     // Act
     CalculatorComplexNums c(str);
