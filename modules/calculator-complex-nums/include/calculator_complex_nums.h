@@ -10,6 +10,7 @@
 class CalculatorComplexNums {
  private:
     std::string pattern;
+    char operation;
     ComplexNumber c1;
     ComplexNumber c2;
  public:
@@ -19,7 +20,13 @@ class CalculatorComplexNums {
     void Help();
     std::string GetPattern();
     void SetPattern(std::string _pattern);
+    ComplexNumber GetFirst();
+    ComplexNumber GetSecond();
+    char GetOperation();
     bool CheckBrackets();
+    bool CheckSymbols();
+    void InitializeFromPattern();
+    ComplexNumber Calculate();
 };
 
 #endif  // MODULES_CALCULATOR_COMPLEX_NUMS_INCLUDE_CALCULATOR_COMPLEX_NUMS_H_
