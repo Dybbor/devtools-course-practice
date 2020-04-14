@@ -38,17 +38,16 @@ bool CalculatorComplexNums::CheckBrackets() {
     if (count == 0) {
         if (pattern[0] != '(') {
             return false;
-        } else {
-            int pos = static_cast <int> (pattern.find('i'));
-            if (pattern[pos + 1] != ')' && pattern[pos + 3] != '(' &&
-                pattern[pattern.size() - 2] != 'i' &&
-                pattern[pattern.size() - 1] != ')') {
-                return false;
-            }
-            if (pattern[pos + 2] != '+' && pattern[pos + 2] != '-'
-                && pattern[pos + 2] != '/' && pattern[pos + 2] != '*') {
-                return false;
-            }
+        }
+        int pos = static_cast <int> (pattern.find('i'));
+        if (pattern[pos + 1] != ')' && pattern[pos + 3] != '(' &&
+            pattern[pattern.size() - 2] != 'i' &&
+            pattern[pattern.size() - 1] != ')') {
+            return false;
+        }
+        if (pattern[pos + 2] != '+' && pattern[pos + 2] != '-'
+            && pattern[pos + 2] != '/' && pattern[pos + 2] != '*') {
+            return false;
         }
         return true;
     } else {
