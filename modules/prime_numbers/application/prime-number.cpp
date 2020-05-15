@@ -7,6 +7,6 @@
 
 int main(int argc, const char** argv) {
     PrimeNums prime_nums;
-    std::cout << "Hello, world!" << std::endl;
+    std::cout << prime_nums(argc, argv) << std::endl;
     return 0;
 }
