@@ -12,7 +12,7 @@ class PrimeNums {
     std::string operator()(int argc, const char** argv);
     void help(const char* appname, const char* error_message);
     bool checkArgs(int _argc, const char** _argv);
-private:
+ private:
     std::string message_;
 };
 #endif  // MODULES_PRIME_NUMBERS_INCLUDE_PRIME_NUMS_FOR_APP_H_
