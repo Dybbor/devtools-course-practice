@@ -2,11 +2,12 @@
 
 #include <gtest/gtest.h>
 #include <string>
+#include <vector>
 
 #include "include/prime_nums_for_app.h"
 
 class PrimeNumsAppTest : public ::testing::Test {
-protected:
+ protected:
     void Act(std::vector<std::string> args_) {
         std::vector<const char*> parameters;
         parameters.push_back("prime_nums_app.exe");
@@ -19,7 +20,7 @@ protected:
     }
     void Assert(std::string expected) { EXPECT_EQ(expected, output_); }
 
-private:
+ private:
     PrimeNums app_;
     std::string output_;
 };
@@ -27,7 +28,7 @@ private:
 TEST_F(PrimeNumsAppTest, Do_Print_Help_Without_Arguments) {
     std::vector<std::string> args = {};
     std::ostringstream  answer;
-    answer << "ERROR: Should be 2 arguments\n" 
+    answer << "ERROR: Should be 2 arguments\n"
         << "This is a primary numbers application."
         << "\nPlease provide arguments in the following format:\n"
         << "<left border> <right border>\n"
