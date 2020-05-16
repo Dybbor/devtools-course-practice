@@ -3,6 +3,7 @@
 #include <gtest/gtest.h>
 #include <string>
 #include <vector>
+#include<iostream>
 
 #include "include/prime_nums_for_app.h"
 
