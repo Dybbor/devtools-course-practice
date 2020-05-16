@@ -4,7 +4,8 @@
 #include "include/TPrime_Nums.h"
 
 #include <sstream>
-#include <iostream>
+#include <string>
+#include<vector>
 
 PrimeNums::PrimeNums() : message_("") {}
 
@@ -14,16 +15,16 @@ void PrimeNums::help(const char* appname, const char* error_message) {
     message_ += "Please provide arguments in the following format:\n";
     message_ += "<left border> <right border>\n";
     message_ += "Where all arguments are int numbers,\n";
-    message_ +="left border less than right border,\n" ;
+    message_ += "left border less than right border,\n" ;
     message_ += "and both of border not equal null";
 }
 
 bool PrimeNums::checkArgs(int argc, const char** argv) {
     int a, b;
-    if (argc != 3){
+    if (argc != 3) {
         help(argv[0], "ERROR: Should be 2 arguments\n");
         return false;
-    } 
+    }
     a = atoi(argv[1]);
     b = atoi(argv[2]);
     if (a < 0) {
@@ -45,7 +46,7 @@ std::string PrimeNums::operator()(int argc, const char** argv) {
     int b;
     if (!checkArgs(argc, argv)) {
         return message_;
-    } 
+    }
     a = atoi(argv[1]);
     b = atoi(argv[2]);
     std::ostringstream stream;
