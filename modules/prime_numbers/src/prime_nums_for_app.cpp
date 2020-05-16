@@ -1,11 +1,11 @@
 // Copyright 2020 Dobrohotov Vitaly
 
-#include "include/prime_nums_for_app.h"
-#include "include/TPrime_Nums.h"
-
 #include <sstream>
 #include <string>
 #include<vector>
+
+#include "include/prime_nums_for_app.h"
+#include "include/TPrime_Nums.h"
 
 PrimeNums::PrimeNums() : message_("") {}
 
@@ -15,7 +15,7 @@ void PrimeNums::help(const char* appname, const char* error_message) {
     message_ += "Please provide arguments in the following format:\n";
     message_ += "<left border> <right border>\n";
     message_ += "Where all arguments are int numbers,\n";
-    message_ += "left border less than right border,\n" ;
+    message_ += "left border less than right border,\n";
     message_ += "and both of border not equal null";
 }
 
