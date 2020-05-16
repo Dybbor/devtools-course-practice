@@ -4,6 +4,7 @@
 #define MODULES_PRIME_NUMBERS_INCLUDE_PRIME_NUMS_FOR_APP_H_
 
 #include <string>
+#include <iostream>
 #include "include/TPrime_Nums.h"
 
 class PrimeNums {
